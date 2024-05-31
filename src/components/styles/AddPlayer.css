@@ -1,0 +1,41 @@
+#add-player-background {
+	background-color: #f2c57c;
+	width: 100%;
+}
+
+#add-player-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90vw;
+	margin: auto;
+	padding: 20px 0;
+}
+
+#input-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.new-player-input {
+	outline: none;
+	border: none;
+	height: 4vh;
+	width: 48%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.15);
+	padding: 0 10px;
+}
+
+#add-player-btn {
+	border: none;
+	width: 100%;
+	background-color: #a7c957;
+}
+
+#add-player-btn:active {
+	background-color: #6a994e;
+}
