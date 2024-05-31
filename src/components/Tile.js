@@ -19,7 +19,6 @@ export default function Tile(props) {
 		showDelete,
 		deleteTile,
 		showEditPlayer,
-		showEditInput,
 		toggleEditInput,
 		setEditID,
 		updateTile,
@@ -68,10 +67,8 @@ export default function Tile(props) {
 
 	// Function that handles when edit is toggled and sends ID upwards
 	const onEdit = () => {
+		toggleEditInput();
 		setEditID({ id: id, name: name, title: title });
-		if (!showEditInput) {
-			toggleEditInput();
-		}
 	};
 
 	return (

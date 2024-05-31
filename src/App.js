@@ -115,9 +115,6 @@ Creating Initial Tiles
 				id: doc.id,
 			}));
 
-			// Filters list by highest win rate at the top
-			filteredData.sort((a, b) => b.wins / b.games - a.wins / a.games);
-
 			console.log('Read tile list');
 			setTileList(filteredData);
 		} catch (error) {
@@ -125,7 +122,6 @@ Creating Initial Tiles
 		}
 	}, [tilesCollectionRef]);
 
-	// Runs at startup to fetch data from firestore
 	useEffect(() => {
 		getTileList();
 	}, [getTileList]);
@@ -148,7 +144,6 @@ Creating Initial Tiles
 				showDelete={showDelete}
 				deleteTile={deleteTile}
 				showEditPlayer={showEditPlayer}
-				showEditInput={showEditInput}
 				toggleEditInput={toggleEditInput}
 				setEditID={setEditID}
 				updateTile={updateTile}
